@@ -15,7 +15,7 @@ pipeline {
         stage ('upload artifacts') {
             steps {
                 sh '''
-                  curl -f -v -u admin:admin123 --upload-file redis.zip http://172.31.13.117:8081/repository/redis/redis.zip
+                  curl -f -v -u admin:admin123 --upload-file /home/ubuntu/workspace/CI-Pipelines/redis.zip http://172.31.13.117:8081/repository/redis/redis.zip
                 '''
             }
         }
