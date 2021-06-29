@@ -9,7 +9,9 @@
 // )
 
 pipeline {
-    agent any
+    agent {
+        label 'JAVA'
+    }
 
     stages {
 
