@@ -24,7 +24,7 @@ pipeline {
         stage('Upload Artifacts') {
             steps {
                 sh '''
-                  curl -f -v -u admin:admin123 --upload-file /var/lib/jenkins/workspace/CI-Pipelines/redis.zip http://172.31.1.61:8081/repository/redis/redis.zip
+                  curl -f -v -u admin:admin123 --upload-file /home/ubuntu/workspace/CI-Pipelines/redis.zip http://172.31.1.61:8081/repository/redis/redis.zip
                 '''
             }
         }
